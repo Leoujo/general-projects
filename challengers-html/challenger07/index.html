@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem Flexível</title>
+    <link rel="shortcut icon" href="./images/favicon07.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Imagem Flexível</h1>
+    <p>Opa, ela muda de tamanho mesmo 🤪</p>
+    <!--
+    <img src="../../d007/imagens/paisagem-p.png" alt="" sizes="max-width:320px">
+    <img src="../../d007/imagens/paisagem-m.png" alt="">
+    é uma imagem com várias fontes
+    -->
+    <picture>
+        <source media="(max-width:500px)" srcset="./images/paisagem-p.png">
+        <source media="(max-width:1000px)" srcset="./images/paisagem-m.png">
+        <img src="./images/paisagem-g.png" alt="">
+    </picture>
+</body>
+</html>
